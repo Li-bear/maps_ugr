@@ -1,26 +1,35 @@
 <vxml version = "2.1" xmlns="http://www.w3.org/2001/06/vxml" xml:lang="en-ES">
 
-<form id="en_maps_ugr">
+<form id="en_intro">
 <field name="origen">
+  <grammar src="short_answers.jsgf"/>
     <prompt>
-        Where do you want to leave from?
+        Do you want a description of faculty facilities?
     </prompt>
-    <grammar src="ciudades.jsgf"/>
   </field>
+</form>
 
-  <field name="dia">
+<form id="en_goto">
+  <field name="origin">
+    <grammar src="places.jsgf"/>
     <prompt>
-        Which day?
+      Where do you want to go?
     </prompt>
-    <grammar src="dias.jsgf"/>
   </field>
+</form>
 
-
-
-  <filled>
+<form id="en_info_place">
+  <field name="en_getinfo" type="boolean">
+    <grammar src="short_answers.jsgf"/>
     <prompt>
-        I think you want to fly to <value expr="destino"/> from <value expr="origen"/> leaving on <value expr="dia"/> . Thank you for your call. Goodbye. 
+      Do you want to know more about this place?
     </prompt>
-  </filled>
+    <noinput>
+      I haven't listen anything
+      <reprompt/>
+    </noinput>
+    <!-- Add prompt with details-->
+    <prompt bargein="false"><audio src="details.wav"/></prompt>
+  </field>
 </form>
 </vxml>

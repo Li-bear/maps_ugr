@@ -1,5 +1,10 @@
 #JSGF V1.0;
 
-grammar places;
+grammar es_places;
+grammar en_places;
+grammar de_places;
 
-public <places> = biblioteca | paris | madrid;
+
+public <en_places> = Library| Conference rooms| Study rooms | Classrooms | Student room| Concierge| Cafeteria| Restaurante | Administration| Toilet;
+public <es_places> = Biblioteca| Salas de conferencias| Salas de estudio| Aulas| Sala de estudiantes| Conserjería| Cafetería| Comedor| Servicios administrativos| Baños;
+public <de_places>;
