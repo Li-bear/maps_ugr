@@ -1,0 +1,83 @@
+<vxml version = "2.1" xmlns="http://www.w3.org/2001/06/vxml" xml:lang="es-ES-de-DE-en-ES">
+
+<form id="maps_ugr">
+
+<field name="language">
+  // TODO: J
+  <prompt>
+      Bienvenido, Welcome, Wilkommen a maps UGR
+      For English say English
+      Fuer deutsch sag deutsch
+      Para Español diga continuar
+  </prompt>
+  <grammar src="languages.jsgf"/>
+</field>
+
+
+<filled mode="all" namelist="choosen_language">
+  <if cond="ciudad_origen == english">
+      <prompt>Hi</prompt>
+      <clear/>
+  <else/>
+      <prompt>¿Has dicho que quieres viajar desde <value expr="ciudad_origen"/> a <value expr="ciudad_destino"/> </prompt>
+  </if>
+</filled>
+
+
+<field name="language">
+  <prompt>
+      Bienvenido, Welcome, Wilkommen a maps UGR
+      For English say English
+      Fuer deutsch sag deutsch
+      Para Español diga continuar
+  </prompt>
+  <grammar src="languages.jsgf"/>
+</field>
+
+<filled mode="all" namelist="choosen_language">
+  <if cond="choosen_language == 'english'">
+    <goto next="english.xml"/>
+  <elseif cond="choosen_language == 'deutsch'"/>
+    <goto next="deutsch.xml"/>
+  <elseif cond="choosen_language == 'espanol'"/>
+    <goto next="espanol.xml"/>
+  <else/>
+    <!-- Handle unsupported language -->
+    <prompt>Sorry, we don't support that language. Please choose from the available options.</prompt>
+    <reprompt/>
+  </if>
+</filled>
+
+
+<field name="destination">
+// TODO: 
+  <prompt>
+      Donde quieres ir?
+  </prompt>
+  <grammar src="places.jsgf"/>
+</field>
+
+<field name="origen">
+  // TODO: 
+    <prompt>
+        Donde estas?
+    </prompt>
+    <grammar src="places.jsgf"/>
+  </field>
+
+<filled mode="all" namelist="ciudad_origen ciudad_destino">
+  <if cond="ciudad_origen == ciudad_destino">
+      <prompt>La ciudad de salida no puede ser igual que la de destino.</prompt>
+      <clear/>
+  <else/>
+      <prompt>¿Has dicho que quieres viajar desde <value expr="ciudad_origen"/> a <value expr="ciudad_destino"/> </prompt>
+  </if>
+</filled>
+
+
+
+  
+
+  </form>
+
+</vxml>

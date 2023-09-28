@@ -1,36 +1,26 @@
-<vxml version = "2.1" xmlns="http://www.w3.org/2001/06/vxml">
+<vxml version = "2.1" xmlns="http://www.w3.org/2001/06/vxml" xml:lang="es-ES">
 
-  <form id="maps_ugr">
-
-  <field name="destino">
-    <prompt>
-        Where do you want to fly?
-    </prompt>
-    <grammar src="ciudades.jsgf"/>
-  </field>
-
-  <field name="origen">
+<form id="en_maps_ugr">
+<field name="origen">
     <prompt>
         Where do you want to leave from?
     </prompt>
     <grammar src="ciudades.jsgf"/>
-  </field>
+    </field>
 
-  <field name="dia">
+    <field name="dia">
     <prompt>
         Which day?
     </prompt>
     <grammar src="dias.jsgf"/>
-  </field>
+    </field>
 
 
 
-  <filled>
+    <filled>
     <prompt>
         I think you want to fly to <value expr="destino"/> from <value expr="origen"/> leaving on <value expr="dia"/> . Thank you for your call. Goodbye. 
     </prompt>
-  </filled>
-
-  </form>
-
+    </filled>
+</form>
 </vxml>
