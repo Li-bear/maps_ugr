@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar places;
+
+public <places> = biblioteca | paris | madrid;

@@ -1,0 +1,6 @@
+IMPT
+
+En los prompts y en los ficheros de gramaticas no se pueden usar tildes o interrogacion inicial,
+pues no existen en Ingles.
+
+Las vocales no pueden llevar tilde y solo se puede usar interrogacion final.
