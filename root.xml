@@ -13,9 +13,9 @@ Ayuda por favor
     <field name="language">
       <prompt>
         Bienvenido, Welcome, Wilkommen a maps UGR
-        For English say English
+        For English say english
         Fuer deutsch sag deutsch
-        Para Español diga continuar
+        Para Español diga español
       </prompt>
       <grammar src="languages.jsgf" />
     </field>
