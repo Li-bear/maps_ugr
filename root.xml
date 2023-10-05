@@ -20,12 +20,12 @@ Ayuda por favor
       <grammar src="languages.jsgf" />
     </field>
 
-    <filled mode="all" namelist="choosen_language">
-      <if cond="choosen_language == 'english'">
+    <filled mode="all" namelist="language">
+      <if cond="language == 'english'">
         <goto next="english.xml" />
-        <elseif cond="choosen_language == 'deutsch'" />
+        <elseif cond="language == 'deutsch'" />
         <goto next="german.xml" />
-        <elseif cond="choosen_language == 'espanol'" />
+        <elseif cond="language == 'espanol'" />
         <goto next="spanish.xml" />
         <else />
         <!-- Handle unsupported language -->
