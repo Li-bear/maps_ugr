@@ -24,9 +24,9 @@ Ayuda por favor
       <if cond="choosen_language == 'english'">
         <goto next="english.xml" />
         <elseif cond="choosen_language == 'deutsch'" />
-        <goto next="deutsch.xml" />
+        <goto next="german.xml" />
         <elseif cond="choosen_language == 'espanol'" />
-        <goto next="espanol.xml" />
+        <goto next="spanish.xml" />
         <else />
         <!-- Handle unsupported language -->
         <prompt>Sorry, we don't support that language. Please choose from the available options.</prompt>
