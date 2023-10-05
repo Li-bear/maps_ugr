@@ -8,3 +8,55 @@ grammar de_places;
 public <en_places> = Library| Conference rooms| Study rooms | Classrooms | Student room| Concierge| Cafeteria| Restaurante | Administration| Toilet;
 public <es_places> = Biblioteca| Salas de conferencias| Salas de estudio| Aulas| Sala de estudiantes| Conserjería| Cafetería| Comedor| Servicios administrativos| Baños;
 public <de_places>;
+
+Secretario
+Salon de Actos
+Sala de trabajo en grupo
+Direccion
+Aula - 1.1
+Aula - 1.2
+Aula 0.1
+Aula 0.2
+Aula 0.3
+Aula 0.4
+Aula 0.5
+Aula 0.6
+Aula 0.7
+Aula 0.8
+Aula 1.0
+Aula 1.1
+Aula 1.2
+Aula 1.3
+Aula 1.4
+Aula 1.5
+Aula 1.6
+Aula 1.7
+Aula 1.8
+Laboratorios 2.1
+Laboratorios 2.2
+Laboratorios 2.3
+Laboratorios 2.4
+Laboratorios 2.5
+Laboratorios 2.6
+Laboratorios 2.7
+Laboratorios 2.8
+Laboratorios 2.9
+Laboratorios 2.10
+Sala de Operadores
+Laboratorios 3.1
+Laboratorios 3.2
+Laboratorios 3.3
+Laboratorios 3.4
+Laboratorios 3.5
+Laboratorios 3.6
+Laboratorios 3.7
+Laboratorios 3.8
+Laboratorios 3.9
+Laboratorios 3.10
+Laboratorios 3.11
+A 1
+A 2
+A 3
+B 1
+B 2
+B 3
