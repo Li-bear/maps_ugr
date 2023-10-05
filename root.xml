@@ -17,7 +17,7 @@ Ayuda por favor
         Fuer deutsch sag deutsch
         Para Español diga español
       </prompt>
-      <grammar src="languages.jsgf" />
+      <grammar src="language.jsgf" />
     </field>
 
     <filled mode="all" namelist="language">
